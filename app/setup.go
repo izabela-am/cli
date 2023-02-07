@@ -25,6 +25,15 @@ func Setup() *cli.App {
 			},
 		},
 		{
+			Name:    "connected_devices",
+			Aliases: []string{"ncd"},
+			Usage:   "TODO",
+			Action: func(context *cli.Context) error {
+				ConnectedDevices()
+				return nil
+			},
+		},
+		{
 			Name:    "Linux Dependency Manager",
 			Aliases: []string{"ldm"},
 			Usage:   "TODO",
