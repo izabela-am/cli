@@ -27,6 +27,7 @@ func ConnectedDevices() {
 		for entry := range results {
 			for _, value := range entry.Text {
 				fmt.Println(value)
+				fmt.Println("")
 			}
 		}
 	}(entries)
